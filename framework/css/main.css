@@ -1,58 +1,46 @@
+
 body {
+  height: 100%;
   font-family: 'Lato', sans-serif;
-  color: #747704;
+  color:#525c65;
   font-weight: 300;
 }
 
 hr {
-      color: #747704;
-      background-color: #747704;
-      height: 2px;
-    }
-
-.links {
-  text-align: center;
+  color:#008ba0;
+  background-color:#008ba0;
+  height: 2px;
 }
 
-.text {
-  text-align: center;
-}
-
-.text-muted {
-  color: #BCBBBB;
-}
-
-.text-style {
-
-}
-
-.text-thin {
-  font-weight: 100;
+.logo {
+  width:100px;
+  height:100px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .title-super {
   font-size: 50px;
+}
+
+.title {
+  text-align: right;
+  font-weight: 100;
+}
+
+.name {
   text-transform: uppercase;
 }
 
-.title-logo {
-  margin-top: 20px;
-  width: 100px;
-  height: 100px;
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-
+.sub-heading {
+  font-size: 18px;
 }
 
-.text {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
+h2.title {
+  text-align: left;
 }
 
-.img-main {
+.main-img{
   width: 960px;
   height: 350px;
   max-width: 100%;
@@ -68,25 +56,48 @@ hr {
   margin-right: auto;
 }
 
-a, button {
-  min-width: 48px;
-  min-height: 48px;
+.text {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  text-transform: uppercase;
+  position: relative;
+  text-align: center;
 }
-img.displayed {
+
+.links {
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  padding-bottom: 20px;
+  line-height: 3.5;
+}
+
+.displayed {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
-img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
+
+a, button {
+  display: inline-block;
+  min-width: 48px;
+  min-height: 48px;
 }
 
-.col-md-6 {
-  text-align: center;
+.footer-color {
+  color: black;
+  background-image: linear-gradient(to bottom right, #F7F7F7, #EAFBFF);
 }
 
-.col-md-12 {
-  text-align: left;
+@media screen and (max-width:900px) {
+  .title, h2.title {
+    text-align: center;
+  }
+  .logo {
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
